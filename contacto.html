@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/estilos4.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body background="./images/FONDONEW5.jpg">
+
+    <div id="container">
+        <center><img src="./images/WOS.png" alt="" width="500" height="400"></center>
+        <div id="header">
+            <H1 style="color: whitesmoke;">BIENVENIDO A WOS MUSIC CLUB</H1>
+        </div>
+
+        <div id="nav">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./biografia.html">Biografia</a></li>
+                    <li><a href="./temas.html">Temas</a></li>
+                    <li><a href="./freestyle.html">Freestyle</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+
+
+        </div>
+
+
+
+    </div>
+    <div id="content">
+
+        <hr>
+        <center>
+            <h2><b> Envíanos tu opinión</b></h2>
+        </center>
+        <hr>
+
+        <form id="formulario" method="#" action="">
+            <fieldset>
+                <legend> <b> Datos personales:</b></legend>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Nombre y apellido" required>
+                </p>
+                <p>
+                    <label for="edad">Edad:</label>
+                    <input type="text" id="edad" size="5" required>
+                </p>
+                <p>
+                    <input type="radio" name="sexo" id="hombre" value="hombre" required>
+                    <label for="hombre">Hombre</label>
+                </p>
+                <p>
+                    <input type="radio" name="sexo" id="mujer" value="mujer" required>
+                    <label for="mujer">Mujer</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend> <b> Comparte tu opinión: </b></legend>
+                <p>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" name="fecha" required>
+                </p>
+                <p>
+                    <label for="menu">Selecciona una opción:</label>
+                    <select name="menu">
+                        <option value="0">...</option>
+                        <option value="1">Queja</option>
+                        <option value="2">Petición</option>
+                        <option value="3">Felicitación</option>
+                    </select>
+                </p>
+                <p>Tu opinión:</p>
+                <p>
+
+                    <textarea name="texto" rows="6" cols="40" placeholder="Escribe aquí"></textarea>
+                </p>
+                <p>
+                    <label for="rango">Valora nuestra página:</label>
+                    <input type="range" name="rango" min="1" max="3" list="lista-rango">
+                    <datalist id="lista-rango">
+                        <option value="1" label="Malo">
+                        <option value="2" label="Regular">
+                        <option value="3" label="Bueno">
+                        </option>
+
+                    </datalist></p>
+
+                <center><button type="submit" onclick="mensaje('GRACIAS POR TU VISITA.')">
+                        <img src="./images/BOTON-ENVIAR.png" alt="imagen" width="32" height="32"
+                            style="vertical-align: middle">
+                        Enviar
+                    </button>
+
+                    <script>
+                        function mensaje(text) {
+                            alert(text);
+                        }
+                    </script>
+                    <button type="reset">
+                        <img src="./images/equis.png" alt="imagen" width="32" height="32"
+                            style="vertical-align: middle">
+                        Borrar
+                    </button></center>
+            </fieldset>
+
+        </form>
+        <hr>
+
+
+
+
+
+
+
+    </div>
+    <div id="footer">
+        <center>
+            <h3 style="color: whitesmoke;">CONTACTO DIRECTO.</h3>
+        </center>
+
+        <center>
+            <p>
+                <a href="mailto:dscastellanos85@misena.edu.co"> <img src="./images/mail.webp" alt="" width="50"
+                        height="50"></a>
+
+                <a href="skype:snuutz?call"> <img src="./images/skype-icon.png" alt="" width="50" height="50"></a>
+
+                <a href="tel:+573117616444"> <img src="./images/call.png" alt="" width="50" height="50"></a>
+            </p>
+        </center>
+
+
+    </div>
+    </div>
+
+
+</body>
+
+</html>
